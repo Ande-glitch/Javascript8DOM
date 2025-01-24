@@ -1,0 +1,20 @@
+#theDiv{
+    display: flex;  /* Enable Flexbox */
+    flex-direction: row; /* Stack children (buttons and divs) vertically */
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+}
+
+.theDivs {
+    width: 150px; /* Set a width for your divs */
+    height: 150px; /* Set a height for your divs */
+    margin: 50px;
+    border: 1px solid black;
+}
+
+.theDivs {
+    width: 150px; /* Set a width for your divs */
+    height: 150px; /* Set a height for your divs */
+    margin: 50px;
+    border: 1px solid black;
+}
