@@ -99,7 +99,9 @@ starButton.addEventListener("click", function() {
         for (let j = 0; j < width - 2; j++) { // excluding the stars made from height
             rektangel += " "; // adding in the empty space between left and right
         }
+        if (width >= 2) {
         rektangel += "*" // thereafter with the order set, where it first prints the left side, and after adding in empty spaces, makes the right side
+        }
     rektangel += "\n"} // line break for bottom
     
     if (height > 1) {
