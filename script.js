@@ -90,24 +90,32 @@ starButton.addEventListener("click", function() {
     let height = document.getElementById("height").value
     let rektangel = '';
 
-    for (let i = 0; i < width; i++) {
-        rektangel += "*"}
+    for (let i = 0; i < width; i++) { //top
+        rektangel += "*";}
     rektangel += "\n";
 
-    for (let i = 0; i < height - 2; i++) {
-        rektangel += "*";
-        for (let j = 0; j < width - 2; j++) {
-            rektangel += " ";}
-        if (width > 1) {
-            rektangel += "*";
+    for (let i = 0; i < height - 2; i++) { //middle
+        rektangel += "*"
+        for (let j = 0; j < width - 2; j++) { // excluding the stars made from height
+            rektangel += " "; // adding in the empty space between left and right
         }
-        rektangel += "\n";
-    }
+        rektangel += "*" // thereafter with the order set, where it first prints the left side, and after adding in empty spaces, makes the right side
+    rektangel += "\n"} // line break for bottom
+    
     if (height > 1) {
         for (let i = 0; i < width; i++) {
-            rektangel += "*";
-        }
+            rektangel += "*";}
+        rektangel += "\n";
     }
 
     document.getElementById("rektangel").textContent = rektangel;
+})
+
+// Oppgave 6
+
+const colorButton = document.querySelector("#colorButton")
+
+colorButton.addEventListener("click", function() {
+    let input = document.getElementById("colorInput").value;
+    document.body.style.backgroundColor = input
 })
